@@ -1,7 +1,4 @@
 fastapi
 uvicorn
-sqlalchemy
-pydantic
-pydantic[email]
-python-dotenv
 google-generativeai
+pydantic
