@@ -1,0 +1,235 @@
+/* Projects styles — Agent 3 fills this */
+
+#projects {
+  padding: var(--section-gap) 0;
+}
+
+.projects-header {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--text-head);
+  margin-bottom: 24px;
+}
+
+/* Filter tabs */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.filter-tab {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.filter-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-teal);
+  transition: width 0.3s ease;
+}
+
+.filter-tab:hover {
+  color: var(--text-head);
+}
+
+.filter-tab[data-active="true"] {
+  color: var(--text-head);
+  font-weight: 600;
+}
+
+.filter-tab[data-active="true"]::after {
+  width: 100%;
+}
+
+[dir="rtl"] .filter-tab::after {
+  left: auto;
+  right: 0;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card */
+.project-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.15);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+}
+
+/* Featured Card (Card 1) */
+.project-card.featured-card {
+  box-shadow: 0 0 0 1px var(--accent-teal), 0 0 24px rgba(0,201,167,0.12);
+}
+
+.project-card.featured-card:hover {
+  box-shadow: 0 0 0 1px var(--accent-teal), 0 10px 30px rgba(0,201,167,0.25);
+}
+
+/* Card Header & Badges */
+.card-header {
+  margin-bottom: 20px;
+}
+
+.project-badge {
+  display: inline-block;
+  font-size: 13px;
+  font-family: var(--font-display);
+  background: rgba(0, 201, 167, 0.1);
+  color: var(--accent-teal);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.in-progress-badge {
+  background: rgba(139, 148, 158, 0.1);
+  color: var(--text-muted);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  color: var(--text-head);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Card Text & Bullets */
+.project-desc {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-bullets {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.project-bullets li {
+  font-size: 0.85rem;
+  color: var(--text-body);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.bullet-check {
+  color: var(--accent-teal);
+  font-weight: bold;
+}
+
+/* Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.tag {
+  font-family: var(--font-display);
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.btn-link {
+  color: var(--text-head);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+  color: var(--accent-teal);
+}
+
+.btn-link svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-link:hover svg {
+  transform: translateX(4px) translateY(-4px);
+}
+
+[dir="rtl"] .btn-link:hover svg {
+  transform: translateX(-4px) translateY(-4px);
+}
+
+.btn-link.disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-link.disabled:hover {
+  color: var(--text-muted);
+}
+
+.btn-link.disabled svg {
+  display: none;
+}
