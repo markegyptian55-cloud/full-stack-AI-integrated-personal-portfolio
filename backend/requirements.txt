@@ -2,6 +2,6 @@ fastapi
 uvicorn
 google-generativeai
 pydantic
+pydantic[email]
 sqlalchemy
 python-dotenv
-email-validator
