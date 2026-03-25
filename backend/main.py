@@ -30,7 +30,7 @@ app = FastAPI(
 # 4. Security & Middleware (CORS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -47,6 +47,10 @@ async def add_security_headers_middleware(request, call_next):
     return response
 
 # 6. API Routes
+@app.get("/")
+async def root():
+    return {"status": "active", "message": "Mohamed's AI Portfolio Backend is running."}
+
 @app.get("/health")
 async def health_check():
     return {"status": "healthy", "version": settings.PROJECT_VERSION}

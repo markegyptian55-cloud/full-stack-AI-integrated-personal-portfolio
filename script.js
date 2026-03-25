@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
     chatBody.scrollTop = chatBody.scrollHeight;
 
     try {
-      const response = await fetch('http://localhost:8000/api/chat', {
+      const response = await fetch('https://full-stack-ai-integrated-personal.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (name.trim() && email.trim() && message.trim()) {
         try {
-          await fetch('http://localhost:8000/api/contact', {
+          await fetch('https://full-stack-ai-integrated-personal.onrender.com/api/contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, subject, message })
