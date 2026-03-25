@@ -5,3 +5,4 @@ pydantic
 pydantic[email]
 sqlalchemy
 python-dotenv
+google-generativeai
