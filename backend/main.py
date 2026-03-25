@@ -1,6 +1,5 @@
 import logging
 from fastapi import FastAPI, Depends, HTTPException, status
-from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 import uvicorn
 
@@ -27,7 +26,9 @@ app = FastAPI(
     debug=settings.DEBUG
 )
 
-# 4. Security & Middleware (CORS)
+# 4. Security & Middleware (CORS) - FINAL ALIGNMENT
+from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -49,7 +50,12 @@ async def add_security_headers_middleware(request, call_next):
 # 6. API Routes
 @app.get("/")
 async def root():
-    return {"status": "active", "message": "Mohamed's AI Portfolio Backend is running."}
+    """Root endpoint for health check and general info"""
+    return {
+        "status": "online",
+        "message": "Mohamed's AI Portfolio Backend - Endpoint Aligned",
+        "endpoints": ["/", "/health", "/api/chat", "/api/contact"]
+    }
 
 @app.get("/health")
 async def health_check():
