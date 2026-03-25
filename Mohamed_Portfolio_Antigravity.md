@@ -465,7 +465,7 @@ ABOUT (#about):
   كوداً، أفكر في حركات الشطرنج."
 - Terminal card: dark surface (#161B22), monospace font, teal > prompts, display:
   $ whoami → Mohamed Mostafa Elbasyouni
-  $ location → Giza, Egypt
+  $ location → El Mansoura, Egypt
   $ languages → Arabic (Native), English (B2), German (A2)
   $ certifications → Google Data Analytics ✓ | Microsoft PL-300 ✓
   $ status → Open to: Full-time | Freelance | Remote | Egypt | UAE
@@ -750,7 +750,7 @@ CONTACT (#contact):
 LEFT COLUMN — Contact Info:
   Email: markegyptian55@gmail.com (href="mailto:markegyptian55@gmail.com")
   Phone: +20 122 440 5064 (href="tel:+201224405064")
-  Location: Giza, Egypt · Open to: Egypt | UAE | Remote
+  Location: El Mansoura, Egypt · Open to: Egypt | UAE | Remote
   LinkedIn: https://linkedin.com/in/mohamed-moustafa-elbasyouni-383650211
   GitHub: https://github.com/markegyptian55-cloud
   Portfolio: https://markegyptian55-cloud.github.io/Portfolio/
@@ -879,7 +879,7 @@ Email:     markegyptian55@gmail.com
 LinkedIn:  https://linkedin.com/in/mohamed-moustafa-elbasyouni-383650211
 GitHub:    https://github.com/markegyptian55-cloud
 Portfolio: https://markegyptian55-cloud.github.io/Portfolio/
-Location:  Giza, Egypt
+Location:  El Mansoura, Egypt
 Photo:     pic_a___86_.jpg  (profile photo — already in workspace)
 CV PDF:    Replace href="#" on Download CV button with actual PDF filename
 ```
