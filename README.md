@@ -14,7 +14,7 @@
 <br>
 
 ## 👤 About Me
-I am a Data Analyst and Applied AI Engineer with a Bachelor of Commerce from Zagazig University (2020). I am currently enrolled in the Specialized Diploma in Applied AI & Data Analytics at the Egyptian Military Academy and compiling my expertise through the "Digital Egypt Pioneers" (DigiLance) 9-month initiative. My primary focus is building data-driven AI solutions, scalable backend architectures, and machine learning models.
+I am a Data Analyst and Applied AI Engineer with a Bachelor of Commerce from Zagazig University (2022). I am currently enrolled in the Specialized Diploma in Applied AI & Data Analytics at the Egyptian Military Academy and compiling my expertise through the "Digital Egypt Pioneers" (DigiLance) 9-month initiative. My primary focus is building data-driven AI solutions, scalable backend architectures, and machine learning models.
 
 ## 🚀 Project Overview
 This repository hosts my full-stack, AI-integrated personal portfolio. It features a futuristic **Glassmorphism UI**, a custom AI chatbot powered by the **Google Gemini API**, and a high-performance **FastAPI backend** designed to orchestrate interactive and intelligent digital experiences.
